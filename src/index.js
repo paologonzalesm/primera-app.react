@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App'
+//import './index.css';
+//import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//asigno variable con el id identificador del "<div>"  del html
+const root = document.getElementById("root")
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//const elemento = React.createElement(componente,propidades,hijos)
+//const elemento = React.createElement("h1",{className: "Saludo"}, "Hola mundo Paolo")
+
+//ReactDOM.render(elemento,root);
+ReactDOM.render(<App />,root);
